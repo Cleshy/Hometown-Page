@@ -1,0 +1,98 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+/* ==================== *\
+    Basic Styles
+/* ==================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* 10px */
+}
+
+body {
+  text-align: center;
+  font-family: "Merriweather", serif;
+  font-size: 2rem;
+  color: #444;
+  background-color: #ecf0f1;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* ==================== *\
+    Hero
+/* ==================== */
+
+.hero {
+  display: flex;
+}
+
+.hero-info-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 100px 0 0 200px;
+  background-color: #8b0000;
+}
+
+.hero-img-container {
+  width: 50%;
+  position: relative;
+}
+
+.hero-img-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(139, 0, 0, 0.4), rgba(139, 0, 0, 0.4));
+  pointer-events: none;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-description {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ecf0f1;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-family: "Playfair Display", serif;
+}
+
+.heading-primary {
+  font-size: 11.391rem;
+  color: #ecf0f1;
+  margin-bottom: 1.5rem;
+}
+
+/* ==================== *\
+    Activities
+/* ==================== */

@@ -20,13 +20,16 @@ DARK BLUE: #1D3557
 
 html {
   font-size: 62.5%; /* 10px */
+  scroll-behavior: smooth;
 }
 
 body {
   text-align: center;
   font-family: "Merriweather", serif;
-  font-size: 2rem;
+  font-size: 1.6rem;
+  line-height: 1.5;
   color: #333;
+  position: relative;
 }
 
 img {
@@ -75,6 +78,8 @@ img {
   color: #fff;
   margin-top: 4rem;
   cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
 }
 
 .btn:hover {
@@ -82,7 +87,7 @@ img {
 }
 
 .photo-credit {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 1);
   font-size: 1.6rem;
   margin-top: 2rem;
   font-style: italic;
@@ -94,6 +99,8 @@ img {
 .photo-credit a:link,
 .photo-credit a:visited {
   color: #dcb3b3;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .photo-credit a:hover,
@@ -104,3 +111,93 @@ img {
 /* ==================== *\
     Activities
 /* ==================== */
+
+.activities {
+  padding: 8rem 2rem;
+  max-width: 144rem;
+  margin: 0 auto;
+}
+
+.activities-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10rem;
+}
+
+.activities-img {
+  width: 40rem;
+  object-fit: cover;
+  height: 30rem;
+}
+
+.heading-container {
+  margin-bottom: 8rem;
+}
+
+.heading-secondary {
+  font-size: 4rem;
+  color: #8b0000;
+}
+
+.heading-tertiary {
+  font-size: 2.3rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.activity {
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 60rem;
+}
+
+.activity-text {
+  padding: 2rem;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex-grow: 1;
+}
+
+.photo-credit-activity {
+  font-size: 1.2rem;
+  text-align: right;
+  font-weight: 600;
+  margin-top: auto;
+}
+
+.photo-credit-activity a:link,
+.photo-credit-activity a:visited {
+  color: #8b0000;
+  letter-spacing: 1px;
+}
+
+.photo-credit-activity a:hover,
+.photo-credit-activity a:active {
+  text-decoration: none;
+}
+
+.strong-text-color {
+  color: #8b0000;
+}
+
+.back-to-top {
+  text-decoration: none;
+  font-size: 4rem;
+  background-color: #8b0000;
+  width: 6rem;
+  height: 6rem;
+  color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 3rem;
+  right: 5rem;
+}
+
+.back-to-top:hover {
+  background-color: #610000;
+}
